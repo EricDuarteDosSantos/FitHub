@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Desktop\\FitHub\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48350266-99B1-4854-B4C2-4AFFBFA821FE}|FitHub.csproj|c:\\users\\aluno noite\\desktop\\fithub\\views\\shared\\_layoutcadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48350266-99B1-4854-B4C2-4AFFBFA821FE}|FitHub.csproj|solutionrelative:views\\shared\\_layoutcadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_LayoutCadastro.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\FitHub\\Views\\Shared\\_LayoutCadastro.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutCadastro.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\FitHub\\Views\\Shared\\_LayoutCadastro.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LayoutCadastro.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAcwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T20:33:22.068Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

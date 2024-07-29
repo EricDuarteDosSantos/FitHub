@@ -25,19 +25,18 @@
 </head>
 <body>
     <!-------------------- Header Area (Start) -------------------->
-  
     <!-------------------- Header Area (End) -------------------->
     <div>
         <main">
-            @RenderBody()
-        </main>
+        @RenderBody()
+            </main>
     </div>
 
     <!-------------------- Footer Area (Start) -------------------->
-    
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/swiper/swiper-bundle.min.js"></script>
     <script src="~/js/main.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+        @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -12,7 +12,7 @@
             </div>
 
             <div class="add-user-button">
-                <h1 class="section-title cliente-title-maneger">Gerenciamento de Usuários</h1>
+                <h1 class="section-title cliente-title-maneger">Gerenciamento de Agendamentos</h1>
                 <br />
             </div>
 
@@ -20,13 +20,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="input-group mb-4">
-                            <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Produtos..." aria-label="Filtrar" aria-describedby="basic-addon2">
+                            <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Agendamento..." aria-label="Filtrar" aria-describedby="basic-addon2">
                         </div>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
-                        <button class="btn btn-dark btn-lg" onclick="" data-bs-toggle="modal" data-bs-target="#InserirUsuario" style="color: #f1751b;">
-                            <i class="fa fa-plus"></i> Adicionar Cliente
+                        <button class="btn btn-dark btn-lg" onclick="" data-bs-toggle="modal" data-bs-target="#InserirAgendamento" style="color: #f1751b;">
+                            <i class="fa fa-plus"></i> Adicionar Agendamento
                         </button>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                             <th>Senha</th>
                             <th>Email</th>
                             <th>Telefone</th>
-                            <th>Tipo de Usuário</th>
+                            <th>Tipo de Agendamento</th>
                             <th class="editar">Editar</th>
                             <th class="excluir">Excluir</th>
                         </tr>
@@ -63,12 +63,12 @@
 
                             </td>
                             <td class="text-center">
-                                <button class="btn btn-default" onclick="" data-bs-toggle="modal" data-bs-target="#EditarUsuario" style="color: rgb(15, 15, 15);">
+                                <button class="btn btn-default" onclick="" data-bs-toggle="modal" data-bs-target="#EditarAgendamento" style="color: rgb(15, 15, 15);">
                                     <i class="fa fa-edit" style="color: orange;"></i>
                                 </button>
                             </td>
                             <td class="text-center">
-                                <button class="btn btn-default" onclick="" data-bs-toggle="modal" data-bs-target="#ExcluirUsuario">
+                                <button class="btn btn-default" onclick="" data-bs-toggle="modal" data-bs-target="#ExcluirAgendamento">
                                     <i class="fa fa-trash text-danger"></i>
                                 </button>
                             </td>
@@ -80,11 +80,11 @@
 
         </div>
 
-        <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="EditarAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header" style="background-color: #f1751b; color: white; border-color: #b42079;">
-                        <h1 class="modal-title" id="exampleModalLabel">Editar Cliente</h1>
+                        <h1 class="modal-title" id="exampleModalLabel">Editar Agendamento</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -92,7 +92,7 @@
                             <p style="color:#ac0404">Campos com * vermelho são obrigatórios</p>
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    <input id="EditNome" type="text" class="form-control" placeholder="Digite o nome do cliente">
+                                    <input id="EditNome" type="text" class="form-control" placeholder="Digite o nome do Usuário">
                                 </div>
                                 <div class="col-md-6">
                                     <label>*</label>
@@ -138,18 +138,18 @@
             </div>
         </div>
 
-        <div class="modal fade" id="ExcluirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="ExcluirAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header" style="background-color: #f1751b; color: white; border-color: #b42079;">
-                        <h1 class="modal-title" id="exampleModalLabel">Excluir Cliente</h1>
+                        <h1 class="modal-title" id="exampleModalLabel">Excluir Agendamento</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form>
                             <div class="mb-3">
                                 <label for="nome">Nome</label>
-                                <input type="text" id="ExcNome" class="form-control" placeholder="Digite seu nome..." readonly>
+                                <input type="text" id="ExcNome" class="form-control" placeholder="Digite o nome do Agendamento..." readonly>
 
                             </div>
                             <div class="mb-3">
@@ -176,12 +176,12 @@
             </div>
         </div>
 
-        <div class="modal fade" id="InserirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="InserirAgendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
 
                     <div class="modal-header" style="background-color: #f1751b; color: white; border-color: #b42079;">
-                        <h1 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h1>
+                        <h1 class="modal-title" id="exampleModalLabel">Adicionar Agendamento</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
@@ -190,7 +190,7 @@
                             <p style="color: #ac0404">Campos com * vermelho são obrigatórios</p>
                             <div class="mb-3 row">
                                 <div class="col-md-6">
-                                    <input id="Nome" type="text" class="form-control" placeholder="Digite o nome do cliente">
+                                    <input id="Nome" type="text" class="form-control" placeholder="Digite o nome do Agendamento">
                                 </div>
                                 <div class="col-md-6">
                                     <label>*</label>
@@ -231,7 +231,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" onclick="InserirUsuario()">Adicionar</button><!--onclick para chamar a funcao de alteração-->
+                        <button type="button" class="btn btn-primary" onclick="InserirAgendamento()">Adicionar</button><!--onclick para chamar a funcao de alteração-->
                     </div>
                 </div>
             </div>
@@ -247,7 +247,7 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script>
 
-            function definirEdt(id, Nome, Email, Senha, TipoUsuario, Telefone) {
+            function definirEdt(id, Nome, Email, Senha, TipoAgendamento, Telefone) {
 
                 $('#IdEdt').val(id);
                 $('#EditNome').val(Nome);
@@ -263,11 +263,11 @@
                 }
 
 
-                if ($('#DropTipoUsuarioEdit').length > 0) {
-                    $('#DropTipoUsuarioEdit option').filter(function () {
-                        return $(this).val() === TipoUsuario;
+                if ($('#DropTipoAgendamentoEdit').length > 0) {
+                    $('#DropTipoAgendamentoEdit option').filter(function () {
+                        return $(this).val() === TipoAgendamento;
                     }).prop('selected', true);
-                    $('#DropTipoUsuarioEdit').trigger('chosen:updated');
+                    $('#DropTipoAgendamentoEdit').trigger('chosen:updated');
                 } else {
                     console.error("DropDownList não encontrado.");
                 }
@@ -286,7 +286,7 @@
                 var email = $('#Email').val();
                 var senha = $('#Senha').val();
                 var telefone = $('#Telefone').val();
-                var tipoUsuario = $('#DropTipoUsuario option:selected').val();
+                var tipoUsuario = $('#DropTipoAgendamento option:selected').val();
 
                 if (nome.trim() === "") {
                     alert("Por favor, preencha o campo Nome.");
@@ -301,8 +301,8 @@
                     return;
                 }
 
-                if (tipoUsuario === "Escolha o Tipo de Usuário") {
-                    alert("Por favor, selecione o tipo de usuário.");
+                if (tipoUsuario === "Escolha o Tipo de Agendamento") {
+                    alert("Por favor, selecione o tipo de Agendamento.");
                     return;
                 }
 
@@ -318,12 +318,12 @@
                     Email: email,
                     Senha: senha,
                     Telefone: telefone,
-                    TipoUsuario: tipoUsuario
+                    TipoAgendamento: tipoAgendamento
                 };
 
                 // Faça a chamada AJAX
                 $.ajax({
-                    url: '/Usuario/InserirUsuario',
+                    url: '/Agendamento/InserirAgendamento',
                     type: "POST",
                     dataType: "json",
                     data: dados,
@@ -331,8 +331,8 @@
                         if (resultado.success) {
                             alert(resultado.message);  // Exibe a mensagem de sucesso
                             // Fecha o modal
-                            $('#InserirUsuario').modal('hide');
-                            // Recarrega a págInserirUsuarioina
+                            $('#InserirAgendamento').modal('hide');
+                            // Recarrega a págInserirAgendamentoina
                             location.reload();
                         } else {
                             alert(resultado.message);  // Exibe a mensagem de falha
@@ -344,13 +344,13 @@
                 });
             }
 
-            function AlterarUsuario() {
+            function AlterarAgendamento() {
                 var id = $("#IdEdt").val();
                 var nome = $("#EditNome").val();
                 var senha = $("#EditSenha").val();
                 var email = $("#EditEmail").val();
                 var tel = $('#EditTel').val();
-                var tipoCli = $('#DropTipoUsuarioEdit').val(); // Obtém o valor do tipo de cliente, não apenas o texto
+                var tipoCli = $('#DropTipoAgendamentoEdit').val(); // Obtém o valor do tipo de cliente, não apenas o texto
 
                 // Validação do campo 'Nome'
                 if (!nome) {
@@ -389,25 +389,25 @@
                     Senha: senha,
                     Email: email,
                     Telefone: tel,
-                    TipoUsuario: tipoCli
+                    TipoAgendamento: tipoCli
                 };
 
                 // Faça a chamada AJAX para o servidor
                 $.ajax({
                     type: "POST",
-                    url: "/Usuario/AlterarUsuario",
+                    url: "/Agendamento/AlterarAgendamento",
                     contentType: "application/json; charset=utf-8",
                     data: JSON.stringify(dados),
                     success: function (response) {
                         // Manipule a resposta do servidor
                         if (response.success) {
-                            alert("Cliente alterado com sucesso!");
+                            alert("Agendamento alterado com sucesso!");
                             // Feche o modal de edição se necessário
                             $('#FormEditar').modal('hide');
                             // Recarregue a página se necessário
                             location.reload();
                         } else {
-                            alert("Falha ao alterar cliente.");
+                            alert("Falha ao alterar Agendamento.");
                         }
                     },
                     error: function (error) {
@@ -417,27 +417,27 @@
                 });
             }
 
-            function ExcluirUsuario() {
-                // Obtenha o ID do usuário a ser excluído
+            function ExcluirAgendamento() {
+                // Obtenha o ID do Agendamento a ser excluído
                 var userId = $('#IdExc').val();
 
                 // Faça uma requisição AJAX
                 $.ajax({
                     type: "POST",
-                    url: "/Usuario/ExcluirUsuario", // Substitua "Usuario" pelo nome do seu controller
+                    url: "/Usuario/ExcluirAgendamento", // Substitua "Agendamento" pelo nome do seu controller
                     data: { id: userId },
                     dataType: "json",
                     success: function (response) {
                         // A resposta do servidor está em response.success
                         if (response.success) {
                             // Feche o modal de exclusão
-                            $('#ExcluirUsuario').modal('hide');
-                            alert("Cliente excluido com sucesso!");
+                            $('#ExcluirAgendamento').modal('hide');
+                            alert("Agendamento excluido com sucesso!");
 
                             // Recarregue a página
                             location.reload();
                         } else {
-                            alert("Falha ao excluir usuário.");
+                            alert("Falha ao excluir Agendamento.");
                         }
                     },
                     error: function () {
